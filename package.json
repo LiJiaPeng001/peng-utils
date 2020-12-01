@@ -1,0 +1,21 @@
+{
+  "name": "peng-utils",
+  "version": "0.0.1",
+  "description": "npm包",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiJiaPeng001/peng-utils.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiJiaPeng001/peng-utils/issues"
+  },
+  "homepage": "https://github.com/LiJiaPeng001/peng-utils#readme"
+}
