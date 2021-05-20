@@ -3,9 +3,14 @@
   "version": "0.0.1",
   "description": "npm包",
   "main": "index.js",
+  "lint-staged": {
+    "*.{vue,js}": "eslint --fix"
+  },
   "scripts": {
     "build": "npm publish",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "eslint": "eslint --fix"
   },
   "repository": {
     "type": "git",
@@ -17,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/LiJiaPeng001/peng-utils/issues"
   },
-  "homepage": "https://github.com/LiJiaPeng001/peng-utils#readme"
+  "homepage": "https://github.com/LiJiaPeng001/peng-utils#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "babel-eslint": "^10.1.0",
+    "conventional-changelog-cli": "^2.1.1",
+    "eslint": "^7.26.0",
+    "husky": "^6.0.0"
+  }
 }
