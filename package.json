@@ -1,11 +1,12 @@
 {
   "name": "peng-utils",
+  "author": "lijiapeng",
   "files": [
     "lib"
   ],
   "main": "./lib/peng-utils.umd.js",
   "module": "./lib/peng-utils.es.js",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "exports": {
     ".": {
       "import": "./lib/peng-utils.es.js",
@@ -19,7 +20,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "publish": "npm publish",
+    "pub": "npm publish",
     "prepare": "husky install",
     "log": "conventional-changelog -p angular -i CHANGELOG.md -s -c",
     "eslint": "eslint --fix"
@@ -29,7 +30,6 @@
     "url": "git+https://github.com/LiJiaPeng001/peng-utils.git"
   },
   "keywords": [],
-  "author": "lijiapeng",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LiJiaPeng001/peng-utils/issues"
