@@ -5,7 +5,7 @@
   ],
   "main": "./lib/peng-utils.umd.js",
   "module": "./lib/peng-utils.es.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "exports": {
     ".": {
       "import": "./lib/peng-utils.es.js",
@@ -14,7 +14,7 @@
   },
   "description": "npm包",
   "lint-staged": {
-    "*.{vue,js}": "eslint --fix"
+    "*.{js}": "eslint --fix"
   },
   "scripts": {
     "dev": "vite",
