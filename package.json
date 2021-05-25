@@ -1,15 +1,27 @@
 {
   "name": "peng-utils",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/peng-utils.umd.js",
+  "module": "./lib/peng-utils.es.js",
   "version": "0.0.1",
+  "exports": {
+    ".": {
+      "import": "./lib/peng-utils.es.js",
+      "require": "./lib/peng-utils.umd.js"
+    }
+  },
   "description": "npm包",
-  "main": "index.js",
   "lint-staged": {
     "*.{vue,js}": "eslint --fix"
   },
   "scripts": {
-    "build": "npm publish",
+    "dev": "vite",
+    "build": "vite build",
+    "publish": "npm publish",
     "prepare": "husky install",
-    "log": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -c",
     "eslint": "eslint --fix"
   },
   "repository": {
@@ -17,7 +29,7 @@
     "url": "git+https://github.com/LiJiaPeng001/peng-utils.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "lijiapeng",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LiJiaPeng001/peng-utils/issues"
@@ -30,6 +42,7 @@
     "conventional-changelog-cli": "^2.1.1",
     "eslint": "^7.26.0",
     "husky": "^6.0.0",
-    "lint-staged": "^11.0.0"
+    "lint-staged": "^11.0.0",
+    "vite": "^2.3.3"
   }
 }
